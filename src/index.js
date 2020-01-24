@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Badge from './components/Badge/Badge';
+import NewBadge from './components/NewBadge/NewBadge';
+
+import './global.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const container = document.querySelector('#root');
 
-ReactDOM.render(<Badge/>, container);
+ReactDOM.render(<NewBadge/>,container);
 

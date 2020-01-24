@@ -2,8 +2,6 @@ import React from 'react';
 
 import Logo from '../../img/badge-header.svg';
 import './styles.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import '../../global.css';
 
 class Badge extends React.Component{
 
@@ -16,13 +14,13 @@ class Badge extends React.Component{
 
                 <div className="Badge__section-name">
                     <img className="Badge__avatar"
-                         src="https://secure.gravatar.com/avatar/11da7bec247f8bd5c9dbe3cd000c48ce" 
+                         src={this.props.avatarUrl} 
                          alt="Avatar"/>
-                    <h1>Agustín <br/>Zamar</h1>
+                    <h1>{this.props.firstName} <br/>{this.props.lastName}</h1>
                 </div>
                 <div className="Badge__section-info">
-                    <p>Full Stack Developer</p>
-                    <div>@_agustinzamar</div>
+                    <h3>{this.props.jobTitle}</h3>
+                    <div>@{this.props.twitter}</div>
                 </div>
                 <div className="Badge__footer">
                     #platziconf
