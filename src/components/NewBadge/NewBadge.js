@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Badge from '../Badge/Badge';
-import Navbar from '../Navbar/Navbar';
 import BadgeForm from '../BadgeForm/BadgeForm';
 
 import header from '../../img/badge-header.svg';
@@ -23,7 +22,7 @@ class BadgeNew extends React.Component{
     handleChange = (e) => {
         this.setState({
             form: {
-                ... this.state.form,
+                ...this.state.form,
                 [e.target.name]: e.target.value
             }
         });
@@ -31,8 +30,7 @@ class BadgeNew extends React.Component{
  
     render(){
         return (
-            <div>
-                <Navbar/>                
+            <React.Fragment>
                 <div className="BadgeNew__hero">
                     <img src={header} alt="" className="image-fluid"/>
                 </div>
@@ -49,7 +47,7 @@ class BadgeNew extends React.Component{
                         </div>
                     </div>
                 </div>
-            </div>
+            </React.Fragment>
         );
     }
 

@@ -1,0 +1,31 @@
+.BadgesList__avatar{
+    border-radius: 50%;;
+}
+
+.BadgesList__badge{
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    box-shadow: 3px 3px 7px rgba(0,0,0,.3);
+}
+
+.BadgesList__badge-twitter{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.BadgesList__badge-data{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.BadgesList__badge-twitter img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
